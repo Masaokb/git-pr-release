@@ -141,7 +141,7 @@ module Git
           begin
             try += 1
             sleep 1
-            say "search issues #{try} times with query:#{query}", :debug
+            say "search issues #{try} times with query:#{query}", :info
             # Fortunately, we don't need to take care of the page count in response, because
             # the default value of per_page is 30 and we can't specify more than 30 commits due to
             # the length limit specification of the query string.
